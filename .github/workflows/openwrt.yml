@@ -45,6 +45,7 @@ jobs:
         run: |
           git clone https://github.com/coolsnowwolf/lede
           cp .config ./lede/.config
+          cp config_generate ./lede/package/base-files/files/bin/config_generate
           mv ./lede/* ./
       - name: Install Helloword
         run: |
